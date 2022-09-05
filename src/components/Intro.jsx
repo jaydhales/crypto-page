@@ -1,10 +1,10 @@
-import illustration from "../assets/illustration.svg";
+import illustration from "../assets/btc-illustration.svg";
 import bgRect from "../assets/bg-rect.svg";
 
 const Intro = () => {
   return (
-    <section className="layout relative">
-      <div className="grid gap-6">
+    <section className="layout">
+      <div className="content">
         <div className="flex bg-light w-max bg-opacity-10 rounded-[32px]">
           <p className="font-medium text-primary bg-light px-4 py-1 rounded-[32px]">
             75% SAVE
@@ -19,7 +19,7 @@ const Intro = () => {
           billion in transactions.
         </p>
 
-        <a className="bg-accent rounded-[37px] font-medium w-max py-4 pl-7 pr-4 flex items-center">
+        <a className="blue-btn pr-4 flex items-center">
           {" "}
           Try for FREE{" "}
           <span className=" bg-light text-accent text-[12px] rounded-full grid place-items-center w-8 h-8 ml-4">

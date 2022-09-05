@@ -18,7 +18,7 @@ const Header = () => {
         </ul>
         <ul className="font-medium">
           <a href="#">Login</a>
-          <a href="#" className="rounded-[32px] px-8 py-3 bg-accent">
+          <a href="#" className="blue-btn">
             Register
           </a>
         </ul>

@@ -9,7 +9,7 @@ import Cta from "./components/Cta.jsx";
 import Footer from "./components/Footer.jsx";
 
 const App = () => (
-  <div className="App bg-primary text-light font-sans">
+  <div className="App bg-primary text-light font-sans overflow-clip">
     <Header />
     <Intro />
     <Stats />

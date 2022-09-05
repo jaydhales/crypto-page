@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,16 +9,48 @@
   }
 
   h1 {
-    @apply text-[8vw] md:text-head-1 leading-tight font-semibold;
+    @apply text-[8vw] md:text-head-1 leading-tight font-bold;
   }
   h2 {
-    @apply text-head-2;
+    @apply text-head-3 md:text-head-2 font-bold;
   }
   h3 {
     @apply text-head-3;
   }
 
   .layout {
-    @apply mx-4 grid place-items-center lg:grid-cols-2 ;
+    @apply mx-auto px-4 mt-32 flex flex-col items-center justify-center lg:flex-row max-w-[1200px] relative;
+  }
+
+  .content {
+    @apply grid gap-6 lg:min-w-[40vw];
+  }
+
+  .blue-btn {
+    @apply bg-accent text-light rounded-[37px] font-medium w-max py-4 px-7;
+  }
+
+  input {
+    @apply border-2 px-2;
+  }
+
+  input:focus-visible {
+    @apply outline-none border-primary;
+  }
+
+  .trans {
+    @apply -translate-y-[284px] pt-[284px];
+  }
+
+  @media (min-width: 550px) {
+    .trans {
+      @apply -translate-y-[236px] pt-[236px];
+    }
+  }
+
+  @media (min-width: 645px) {
+    .trans {
+      @apply -translate-y-[214px] pt-[214px];
+    }
   }
 }
