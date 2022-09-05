@@ -28,7 +28,7 @@ const Cryptos = () => {
   ];
 
   return (
-    <section className="bg-light text-primary trans">
+    <section className="bg-light text-primary trans pb-24">
       <h2
         className="max-w-[740px]
       mx-auto text-center mt-24"

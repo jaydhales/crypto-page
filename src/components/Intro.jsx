@@ -27,17 +27,18 @@ const Intro = () => {
           </span>
         </a>
       </div>
-
+      
+        <object
+        data={illustration}
+        type="image/svg+xml"
+        className="z-10 w-full lg:w-1/2"
+      ></object>
+  
+      
       <object
         data={bgRect}
         type="image/svg+xml"
-        className="absolute -bottom-[194px] -right-[194px] "
-      ></object>
-
-      <object
-        data={illustration}
-        type="image/svg+xml"
-        className="w-full z-10"
+        className="hidden lg:block absolute -bottom-1/4 -right-1/3 "
       ></object>
     </section>
   );

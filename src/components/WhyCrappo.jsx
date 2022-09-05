@@ -14,15 +14,17 @@ const WhyCrappo = () => {
           Learn More
         </a>
       </div>
-      <object
-        data={illustration}
-        type="image/svg+xml"
-        className="w-full"
-      ></object>
+      <div className="w-full">
+        <object
+          data={illustration}
+          type="image/svg+xml"
+          className="w-full lg:w-auto"
+        ></object>
+      </div>
       <object
         data={bgWhy}
         type=""
-        className="absolute bottom-6 -right-[2vw] -top-1/2 lg:-right-[194px] "
+        className="hidden lg:block  absolute bottom-1/4 -right-[10%] "
       ></object>
     </section>
   );

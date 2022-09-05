@@ -11,8 +11,8 @@ const EarnCalc = () => {
         </p>
       </div>
 
-      <div className="py-12 bg-light rounded-t-2xl w-full max-w-[950px] mt-16 shadow-2xl">
-        <div className="bg-[#FBFCFE] flex justify-between items-center gap-4 text-primary pb-12 px-12 border-b-2 flex-wrap">
+      <div className="pb-12 w-full max-w-[950px] mt-16 shadow-2xl">
+        <div className="bg-[#FBFCFE] flex justify-between items-center gap-4 text-primary rounded-t-2xl py-12 px-12 border-b-2 flex-wrap">
           <input type="text" placeholder="Enter your hash rate" />
           <input type="number" placeholder="TH/s" className="w-[100px]" />
 
