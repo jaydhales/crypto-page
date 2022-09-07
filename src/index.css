@@ -42,15 +42,27 @@
     @apply -translate-y-[348px] pt-[284px];
   }
 
+  .bottom-pad {
+    @apply pb-[564px];
+  }
+
   @media (min-width: 550px) {
     .trans {
       @apply -translate-y-[300px] pt-[236px];
+    }
+
+    .bottom-pad {
+      @apply pb-[608px];
     }
   }
 
   @media (min-width: 645px) {
     .trans {
       @apply -translate-y-[278px] pt-[214px];
+    }
+
+    .bottom-pad {
+      @apply pb-[380px] md:pb-[290px] lg:pb-[124px];
     }
   }
 }
