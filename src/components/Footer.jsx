@@ -41,7 +41,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-between gap-4 pt-8">
+      <div className="flex justify-between lg:justify-start gap-4 pt-8">
         <p>©2021 CRAPPO. All rights reserved</p>
         <div className="flex w-max gap-8 text-head-3">
           <i className="fab fa-facebook-f"></i>
