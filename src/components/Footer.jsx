@@ -32,7 +32,7 @@ const Footer = () => {
           </nav>
         </div>
 
-        <div className="mt-8 lg:mt-0 col-span-full lg:col-span-3">
+        <div className="mt-8 lg:mt-0 col-span-full lg:col-span-3 mx-auto">
           <h3>We accept following payment systems</h3>
           <div className="mt-6 flex justify-between">
             {[visa, mastercard, bitcoin].map((png) => (
