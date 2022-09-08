@@ -21,18 +21,18 @@ const Header = () => {
         <p className="text-body-md font-semibold m-2">CRAPPO</p>
       </div>
 
-      {isActive ? (
-        <button
-          className="md:hidden absolute right-4 top-6 z-30"
-          onClick={(e) => setActive(!isActive)}
-        >
-          <i className="fas fa-times fa-2x"></i>
-        </button>
-      ) : (
-        <button className="md:hidden" onClick={(e) => setActive(!isActive)}>
-          <i className="fas fa-bars fa-2x "></i>
-        </button>
-      )}
+      <button
+        className="md:hidden absolute right-4 top-6 z-30"
+        onClick={(e) => setActive(!isActive)}
+      >
+        <span className={isActive ? "" : "hidden"}>
+          <i className="fas fa-times fa-2x" />
+        </span>
+
+        <span className={isActive ? "hidden" : ""}>
+          <i className="fas fa-bars fa-2x" />
+        </span>
+      </button>
 
       {isActive ? (
         <AnimatePresence>

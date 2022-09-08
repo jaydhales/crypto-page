@@ -47,10 +47,10 @@ const Features = () => {
       <section>
         <div className="layout lg:flex-row-reverse ">
           <div className="content">
-            <h3>Grow your profit and track your investments</h3>
+            <h3>Detailed Statistics</h3>
             <p>
-              Use advanced analytical tools. Clear Trading View charts let you
-              track current and historical profit investments.
+              View all mining related information in realtime, at any point at
+              any location and decide which polls you want to mine in.
             </p>
             <a href="#" className="blue-btn">
               Learn More

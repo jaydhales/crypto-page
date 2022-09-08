@@ -6,7 +6,7 @@ import bitcoin from "../assets/Bitcoin.png";
 
 const Footer = () => {
   return (
-    <footer className="layout block w-full absolute bottom-0 left-1/2 -translate-x-1/2">
+    <footer className="layout block w-full absolute -bottom-4 left-1/2 -translate-x-1/2">
       <div className="md:grid gap-8 text-center sm:text-left md:grid-cols-6 lg:grid-cols-9 md:place-items-start">
         <div className="mx-auto  mb-8 md:m-0 w-max flex col-span-2 ">
           <object data={logo} type="image/svg+xml"></object>
@@ -41,7 +41,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-between  gap-4 pt-8">
+      <div className="flex flex-col items-center sm:flex-row  sm:justify-between gap-4 pt-8">
         <p>©2021 CRAPPO. All rights reserved</p>
         <div className="flex w-max gap-8 text-head-3">
           <i className="fab fa-facebook-f"></i>
