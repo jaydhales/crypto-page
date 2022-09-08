@@ -19,7 +19,7 @@
   }
 
   .layout {
-    @apply mx-auto px-4 sm:px-8 py-16 flex flex-col items-center justify-center lg:flex-row max-w-[1400px] gap-8 relative;
+    @apply mx-auto px-4 sm:px-8 py-16 flex flex-col items-center justify-center lg:flex-row max-w-[1700px] lg:px-12 gap-8 relative;
   }
 
   .content {
@@ -64,6 +64,21 @@
     .bottom-pad {
       @apply pb-[380px] md:pb-[290px] lg:pb-[124px];
     }
+  }
+
+  .active .card {
+    @apply bg-secondary text-light;
+  }
+  .active p {
+    @apply block;
+  }
+
+  .active a {
+    @apply blue-btn;
+  }
+
+  .active .icon {
+    @apply text-[12px] w-8 h-8;
   }
 }
 

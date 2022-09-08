@@ -1,11 +1,12 @@
 import illustration from "../assets/btc-illustration.svg";
 import bgRect from "../assets/bg-rect.svg";
+import { motion } from "framer-motion";
 
 const Intro = () => {
   return (
     <section className="layout">
       <div className="content">
-        <div className="flex bg-light w-max bg-opacity-10 rounded-[32px]">
+        <div className="flex bg-light w-max bg-opacity-10 rounded-[32px] text-[4vw] sm:text-body-sm">
           <p className="font-medium text-primary bg-light px-4 py-1 rounded-[32px]">
             75% SAVE
           </p>
@@ -27,14 +28,23 @@ const Intro = () => {
           </span>
         </a>
       </div>
-      
-        <object
+
+      <motion.object
         data={illustration}
         type="image/svg+xml"
         className="z-10 w-full lg:w-1/2"
-      ></object>
-  
-      
+        initial={{
+          opacity: 0,
+        }}
+        whileInView={{
+          opacity: 1,
+        }}
+        transition={{
+          duration: 2,
+          delay: 0.5,
+        }}
+      ></motion.object>
+
       <object
         data={bgRect}
         type="image/svg+xml"

@@ -2,6 +2,8 @@ import chart from "../assets/Chart.svg";
 import table from "../assets/Table.svg";
 import stats from "../assets/Stats.svg";
 
+import { motion } from "framer-motion";
+
 const Features = () => {
   return (
     <div className="bg-secondary trans ">
@@ -23,11 +25,21 @@ const Features = () => {
           </div>
 
           <div className="w-full lg:w-2/3">
-            <object
+            <motion.object
               data={chart}
               type="image/svg+xml"
               className="w-full"
-            ></object>
+              initial={{
+                opacity: 0,
+              }}
+              whileInView={{
+                opacity: 1,
+              }}
+              transition={{
+                duration: 2,
+                delay: 0.5,
+              }}
+            ></motion.object>
           </div>
         </div>
       </section>
@@ -46,11 +58,21 @@ const Features = () => {
           </div>
 
           <div className="w-full lg:w-2/3">
-            <object
+            <motion.object
               data={stats}
               type="image/svg+xml"
               className="w-full"
-            ></object>
+              initial={{
+                opacity: 0,
+              }}
+              whileInView={{
+                opacity: 1,
+              }}
+              transition={{
+                duration: 2,
+                delay: 0.5,
+              }}
+            ></motion.object>
           </div>
         </div>
       </section>
@@ -69,11 +91,21 @@ const Features = () => {
           </div>
 
           <div className="w-full">
-            <object
+            <motion.object
               data={table}
               type="image/svg+xml"
               className="w-full"
-            ></object>
+              initial={{
+                opacity: 0,
+              }}
+              whileInView={{
+                opacity: 1,
+              }}
+              transition={{
+                duration: 2,
+                delay: 0.5,
+              }}
+            ></motion.object>
           </div>
         </div>
       </section>

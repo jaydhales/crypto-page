@@ -1,3 +1,4 @@
+import { useState } from "react";
 import btcLogo from "../assets/btc-icon.svg";
 import ethLogo from "../assets/eth-icon.svg";
 import ltcLogo from "../assets/ltc-icon.svg";
@@ -27,6 +28,12 @@ const Cryptos = () => {
     },
   ];
 
+  const [focus, setFocus] = useState("");
+
+  const handleFocus = (e, coin) => {
+    setFocus(coin);
+  };
+
   return (
     <section className="bg-light text-primary trans pb-24">
       <h2
@@ -36,24 +43,30 @@ const Cryptos = () => {
         Trade securely and market the high growth cryptocurrencies.
       </h2>
 
-      <div className="layout justify-between">
+      <div className="layout justify-between ">
         {data.map(({ logo, coin, abbr, details }) => (
-          <div className="group hover:bg-secondary grid gap-4 text-center place-items-center max-w-[370px] px-6 py-12 m-4 rounded-2xl">
-            <object data={logo} type="image/svg+xml"></object>
-            <h3 className="font-bold group-hover:text-light">
-              {coin} <span className="text-body-md font-normal">{abbr}</span>
-            </h3>
-            <p className="group-hover:text-light">{details}</p>
+          <div className={focus === coin ? "active" : ""} key={coin}>
+            <div
+              className="grid card gap-4 text-center place-items-center max-w-[370px] px-6 py-12 m-4 rounded-2xl transition-all duration-1000"
+              onClick={(e) => handleFocus(e, coin)}
+              id={coin}
+            >
+              <object data={logo} type="image/svg+xml"></object>
+              <h3 className="font-bold ">
+                {coin} <span className="text-body-md font-normal">{abbr}</span>
+              </h3>
+              <p className="">{details}</p>
 
-            <a className="group-hover:blue-btn pr-4 flex items-center">
-              <p className="hidden group-hover:block">Start mining</p>
-              <span
-                className=" bg-light text-accent text-[24px] group-hover:text-[12px] rounded-full grid place-items-center w-16 h-16 group-hover:w-8 group-hover:h-8 ml-4 border-2
+              <a className="pr-4 flex items-center">
+                <p className="hidden ">Start mining</p>
+                <span
+                  className="icon bg-light text-accent text-[24px] rounded-full grid place-items-center w-16 h-16 ml-4 border-2
               "
-              >
-                <i className="fas fa-chevron-right" />
-              </span>
-            </a>
+                >
+                  <i className="fas fa-chevron-right" />
+                </span>
+              </a>
+            </div>
           </div>
         ))}
       </div>

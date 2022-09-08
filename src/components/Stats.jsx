@@ -22,13 +22,13 @@ const Stats = () => {
   ];
 
   return (
-    <section className="layout flex gap-7 justify-center lg:justify-between flex-wrap ">
+    <section className="layout gap-7 lg:justify-between">
       {data.map(({ value, detail, imageSource }) => (
-        <div key={value} className="flex gap-4">
-          <object data={imageSource} type=""></object>
+        <div key={value} className="flex gap-4 ">
+          <object data={imageSource} type="image/svg+xml"></object>
           <div>
             <h2>{value}</h2>
-            <p className="w-[210px]">{detail}</p>
+            <p className="w-[210px] text-[14px] sm:text-body-sm">{detail}</p>
           </div>
         </div>
       ))}

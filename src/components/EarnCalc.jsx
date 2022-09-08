@@ -21,7 +21,7 @@ const EarnCalc = () => {
           </a>
         </div>
 
-        <div className="text-primary pt-12 px-12 ">
+        <div className="text-primary bg-light pt-12 px-12 ">
           <p className="text-accent">ESTIMATED 24 HOUR REVENUE:</p>
           <h3 className="font-bold pt-4 pb-1">
             0.055 130 59 ETH <span className="text-accent">($1275)</span>

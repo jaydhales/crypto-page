@@ -1,5 +1,6 @@
 import illustration from "../assets/eth-illustration.svg";
 import bgWhy from "../assets/bg-why.svg";
+import { motion } from "framer-motion";
 
 const WhyCrappo = () => {
   return (
@@ -15,12 +16,23 @@ const WhyCrappo = () => {
         </a>
       </div>
       <div className="w-full">
-        <object
+        <motion.object
           data={illustration}
           type="image/svg+xml"
           className="w-full lg:w-auto"
-        ></object>
+          initial={{
+            opacity: 0,
+          }}
+          whileInView={{
+            opacity: 1,
+          }}
+          transition={{
+            duration: 2,
+            delay: 0.5,
+          }}
+        ></motion.object>
       </div>
+
       <object
         data={bgWhy}
         type=""
