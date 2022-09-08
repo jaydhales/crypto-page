@@ -6,7 +6,7 @@ import bitcoin from "../assets/Bitcoin.png";
 
 const Footer = () => {
   return (
-    <footer className="layout block w-full absolute -bottom-4 left-1/2 -translate-x-1/2">
+    <footer className="layout block ">
       <div className="md:grid gap-8 text-center sm:text-left md:grid-cols-6 lg:grid-cols-9 md:place-items-start">
         <div className="mx-auto  mb-8 md:m-0 w-max flex col-span-2 ">
           <object data={logo} type="image/svg+xml"></object>

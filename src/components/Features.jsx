@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 
 const Features = () => {
   return (
-    <div className="bg-secondary trans ">
-      <h2 className="max-w-[740px] mx-auto text-center">
+    <div className="bg-secondary  ">
+      <h2 className="max-w-[740px] mx-auto text-center pt-16">
         Market sentiments, portfolio, and run the infrastructure of your choice
       </h2>
 
@@ -45,8 +45,8 @@ const Features = () => {
       </section>
 
       <section>
-        <div className="layout lg:flex-row-reverse ">
-          <div className="content">
+        <div className="layout lg:flex-row-reverse">
+          <div className="content lg:w-[550px]">
             <h3>Detailed Statistics</h3>
             <p>
               View all mining related information in realtime, at any point at
@@ -57,7 +57,7 @@ const Features = () => {
             </a>
           </div>
 
-          <div className="w-full lg:w-2/3">
+          <div className="w-full lg:w-2/3 relative lg:right-12">
             <motion.object
               data={stats}
               type="image/svg+xml"
@@ -79,7 +79,7 @@ const Features = () => {
 
       <section>
         <div className="layout">
-          <div className="content">
+          <div className="content lg:w-[550px]">
             <h3>Grow your profit and track your investments</h3>
             <p>
               Use advanced analytical tools. Clear Trading View charts let you
@@ -94,7 +94,7 @@ const Features = () => {
             <motion.object
               data={table}
               type="image/svg+xml"
-              className="w-full"
+              className="w-full relative lg:left-12"
               initial={{
                 opacity: 0,
               }}

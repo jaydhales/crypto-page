@@ -35,10 +35,10 @@ const Cryptos = () => {
   };
 
   return (
-    <section className="bg-light text-primary trans pb-24">
+    <section className="bg-light text-primary pt-16 md:pt-[254px]">
       <h2
         className="max-w-[740px]
-      mx-auto text-center mt-24"
+      mx-auto text-center "
       >
         Trade securely and market the high growth cryptocurrencies.
       </h2>

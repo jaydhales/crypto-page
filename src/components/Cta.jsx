@@ -4,7 +4,7 @@ import rect from "../assets/bg-rect.svg";
 
 const Cta = () => {
   return (
-    <section className="trans cta px-8 py-20 lg:px-32 overflow-hidden">
+    <section className="relative cta px-8 py-20 lg:px-32 overflow-hidden">
       <object
         data={rect}
         type="image/svg+xml"

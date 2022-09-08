@@ -2,16 +2,18 @@ import React from "react";
 
 const EarnCalc = () => {
   return (
-    <section className="layout lg:flex-col lg:max-w-full z-10">
-      <div className="text-center max-w-[650px] mx-auto content ">
-        <h2>Check how much you can earn</h2>
-        <p>
-          Let’s check your hash rate to see how much you will earn today,
-          Exercitation veniam consequat sunt nostrud amet.
-        </p>
-      </div>
+    <section className="layout relative lg:flex-col lg:max-w-full z-10 md:h-[500px]">
+      <div className="md:absolute px-4 md:bottom-[-212px] break">
+        <div className="text-center  max-w-[650px] mx-auto content ">
+          <h2>Check how much you can earn</h2>
+          <p>
+            Let’s check your hash rate to see how much you will earn today,
+            Exercitation veniam consequat sunt nostrud amet.
+          </p>
+        </div>
 
-      <div className="pb-12 w-full max-w-[950px] mt-16 shadow-2xl">
+        <div className="pb-12 w-full max-w-[950px] mt-16 shadow-2xl"></div>
+
         <div className="bg-[#FBFCFE] flex justify-between items-center gap-4 text-primary rounded-t-2xl py-12 px-12 border-b-2 flex-wrap">
           <input type="text" placeholder="Enter your hash rate" />
           <input type="number" placeholder="TH/s" className="w-[100px]" />
@@ -21,7 +23,7 @@ const EarnCalc = () => {
           </a>
         </div>
 
-        <div className="text-primary bg-light pt-12 px-12 ">
+        <div className="text-primary bg-light rounded-b-2xl p-12">
           <p className="text-accent">ESTIMATED 24 HOUR REVENUE:</p>
           <h3 className="font-bold pt-4 pb-1">
             0.055 130 59 ETH <span className="text-accent">($1275)</span>
