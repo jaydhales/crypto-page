@@ -31,13 +31,15 @@ const Features = () => {
               className="w-full"
               initial={{
                 opacity: 0,
+                x: "100%",
               }}
               whileInView={{
                 opacity: 1,
+                x: 0,
               }}
               transition={{
-                duration: 2,
-                delay: 0.5,
+                duration: 1,
+                delay: 0.2,
               }}
             ></motion.object>
           </div>
@@ -64,13 +66,15 @@ const Features = () => {
               className="w-full"
               initial={{
                 opacity: 0,
+                x: "-100%",
               }}
               whileInView={{
                 opacity: 1,
+                x: 0,
               }}
               transition={{
-                duration: 2,
-                delay: 0.5,
+                duration: 1,
+                delay: 0.2,
               }}
             ></motion.object>
           </div>
@@ -97,13 +101,15 @@ const Features = () => {
               className="w-full relative lg:left-12"
               initial={{
                 opacity: 0,
+                x: "100%",
               }}
               whileInView={{
                 opacity: 1,
+                x: 0,
               }}
               transition={{
-                duration: 2,
-                delay: 0.5,
+                duration: 1,
+                delay: 0.2,
               }}
             ></motion.object>
           </div>

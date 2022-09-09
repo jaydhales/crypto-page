@@ -58,7 +58,7 @@ const Cryptos = () => {
               <p className="">{details}</p>
 
               <a className="pr-4 flex items-center">
-                <p className="hidden ">Start mining</p>
+                <p className="transition ease-linear duration-1000 w-0 invisible">Start mining</p>
                 <span
                   className="icon bg-light text-accent text-[24px] rounded-full grid place-items-center w-16 h-16 ml-4 border-2
               "

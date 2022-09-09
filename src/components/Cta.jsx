@@ -8,7 +8,7 @@ const Cta = () => {
       <object
         data={rect}
         type="image/svg+xml"
-        className="absolute -bottom-48 hidden md:block"
+        className="absolute right-0 top-0 hidden md:block"
       ></object>
       <div className="layout items-start bg-accent rounded-2xl justify-between p-12 relative">
         <object

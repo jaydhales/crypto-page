@@ -22,13 +22,15 @@ const WhyCrappo = () => {
           className="w-full lg:w-auto"
           initial={{
             opacity: 0,
+            x: "-100%",
           }}
           whileInView={{
             opacity: 1,
+            x: 0,
           }}
           transition={{
-            duration: 2,
-            delay: 0.5,
+            duration: 1,
+            delay: 0.2,
           }}
         ></motion.object>
       </div>
@@ -36,7 +38,7 @@ const WhyCrappo = () => {
       <object
         data={bgWhy}
         type=""
-        className="hidden lg:block  absolute bottom-1/4 -right-[10%] "
+        className="hidden md:block  absolute -right-16 bottom-16 "
       ></object>
     </section>
   );

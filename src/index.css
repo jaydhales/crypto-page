@@ -42,8 +42,8 @@
   .active .card {
     @apply bg-secondary text-light;
   }
-  .active p {
-    @apply block;
+  .active a p {
+    @apply w-max visible;
   }
 
   .active a {
