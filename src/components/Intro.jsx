@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Intro = () => {
   return (
     <section className="layout">
-      <div className="content">
+      <div className="content pb-16 sm:pb-4 lg:pb-0">
         <div className="flex bg-light w-max bg-opacity-10 rounded-[32px] text-[4vw] sm:text-body-sm">
           <p className="font-medium text-primary bg-light px-4 py-1 rounded-[32px]">
             75% SAVE
